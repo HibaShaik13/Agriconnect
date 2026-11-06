@@ -18,7 +18,10 @@ import {
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { INITIAL_MANDI_PRICES } from '../services/mockData';
-
+import heroImage from "../assets/images/hero_indian_agriculture_1793855342621.jpg";
+import cropImage from "../assets/images/feature_crop_field_1793855343032.jpg";
+import mandiImage from "../assets/images/feature_mandi_market_1793855343270.jpg";
+import expertImage from "../assets/images/feature_agri_expert_1793855343395.jpg";
 export const LandingPage: React.FC = () => {
   const [selectedCropFilter, setSelectedCropFilter] = useState('All');
 
@@ -251,11 +254,10 @@ export const LandingPage: React.FC = () => {
                 <button
                   key={crop}
                   onClick={() => setSelectedCropFilter(crop)}
-                  className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
-                    selectedCropFilter === crop
+                  className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${selectedCropFilter === crop
                       ? 'bg-emerald-600 text-white font-semibold'
                       : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                  }`}
+                    }`}
                 >
                   {crop}
                 </button>
