@@ -87,7 +87,7 @@ export const LandingPage: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md aspect-16/10 lg:aspect-4/3 bg-slate-100">
                 <img
-                  src="/src/assets/images/hero_indian_agriculture_1793855342621.jpg"
+                  src={heroImage}
                   alt="Lush green Indian agricultural farmland with terraced fields at sunrise"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -188,7 +188,7 @@ export const LandingPage: React.FC = () => {
           <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-xs">
             <div className="h-48 overflow-hidden bg-slate-100">
               <img
-                src="/src/assets/images/feature_crop_field_1793855343032.jpg"
+                src={cropImage}
                 alt="Healthy crop field in rural India during golden hour"
                 className="w-full h-full object-cover hover:scale-102 transition-transform duration-300"
                 referrerPolicy="no-referrer"
@@ -205,7 +205,7 @@ export const LandingPage: React.FC = () => {
           <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-xs">
             <div className="h-48 overflow-hidden bg-slate-100">
               <img
-                src="/src/assets/images/feature_mandi_market_1793855343270.jpg"
+                src={mandiImage}
                 alt="Indian APMC Mandi market with sacks of grain"
                 className="w-full h-full object-cover hover:scale-102 transition-transform duration-300"
                 referrerPolicy="no-referrer"
@@ -222,7 +222,7 @@ export const LandingPage: React.FC = () => {
           <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-xs">
             <div className="h-48 overflow-hidden bg-slate-100">
               <img
-                src="/src/assets/images/feature_agri_expert_1793855343395.jpg"
+                src={expertImage}
                 alt="Indian agricultural scientist agronomist inspecting plants"
                 className="w-full h-full object-cover hover:scale-102 transition-transform duration-300"
                 referrerPolicy="no-referrer"
@@ -255,8 +255,8 @@ export const LandingPage: React.FC = () => {
                   key={crop}
                   onClick={() => setSelectedCropFilter(crop)}
                   className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${selectedCropFilter === crop
-                      ? 'bg-emerald-600 text-white font-semibold'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                    ? 'bg-emerald-600 text-white font-semibold'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                     }`}
                 >
                   {crop}
